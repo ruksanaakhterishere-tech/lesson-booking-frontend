@@ -31,6 +31,7 @@ button:disabled {
   margin-bottom: 15px;
   display: block;
 }
+
 .lesson {
   border: 1px solid #ccc;
   padding: 10px;
@@ -38,6 +39,10 @@ button:disabled {
   width: 200px;
   border-radius: 6px;
   background: #fff;
+}
+
+.cart-btn {
+  margin-top: 10px;
 }
 
 .sort-options {
