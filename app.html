@@ -78,6 +78,14 @@
            @input="order.name = order.name.replace(/[^A-Za-z]/g, '')">
         </p>
 
+         <p>
+          <strong>Phone:</strong>
+          <input v-model="order.phone"
+                maxlength="10"
+                placeholder="Enter phone (max 10 digits)"
+                @input="order.phone = order.phone.replace(/[^0-9]/g, '')">
+        </p>
+
       </div>
     </main>
 
