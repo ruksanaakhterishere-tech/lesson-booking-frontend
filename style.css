@@ -23,7 +23,14 @@ button:disabled {
   cursor: not-allowed;
 }
 
-
+.search-box {
+  padding: 8px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  display: block;
+}
 .lesson {
   border: 1px solid #ccc;
   padding: 10px;
