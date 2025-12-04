@@ -13,7 +13,8 @@
   <header>
     <h1>Lesson Booking App</h1>
       <button v-on:click="toggleCart" :disabled="cart.length === 0">
-        <i class="fa-solid fa-cart-shopping"></i> {{ cart.length }} Cart
+        <img :src="lesson.image" />
+ {{ cart.length }} Cart
       </button>
   </header>
 
