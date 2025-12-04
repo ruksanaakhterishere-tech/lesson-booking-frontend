@@ -1,3 +1,4 @@
+const BASE_URL = "https://lesson-booking-backend-dmnf.onrender.com";
 let app = new Vue({
   el: '#app',
   data: {
