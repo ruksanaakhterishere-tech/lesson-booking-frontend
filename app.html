@@ -10,7 +10,12 @@
 <body>
   <div id="app">
 
-  
+  <header>
+    <h1>Lesson Booking App</h1>
+      <button v-on:click="toggleCart" :disabled="cart.length === 0">
+        <i class="fa-solid fa-cart-shopping"></i> {{ cart.length }} Cart
+      </button>
+  </header>
 
     <main v-if="!showCart">
 
