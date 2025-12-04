@@ -51,7 +51,7 @@ let app = new Vue({
   methods: {
     // ------------------- FETCH ALL LESSONS -------------------
     getLessons() {
-      fetch("http://localhost:3000/collection/products")
+      fetch(`${BASE_URL}/collection/products`)
         .then(res => res.json())
         .then(data => {
           this.lessons = data;
