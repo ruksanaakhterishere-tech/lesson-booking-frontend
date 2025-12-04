@@ -61,20 +61,20 @@ let app = new Vue({
 
     // ------------------- BACKEND SEARCH -------------------
     searchLessons() {
-      const text = this.searchText.trim();
+  const text = this.searchText.trim();
 
-      if (text === "") {
-        this.getLessons(); // empty search → load all
-        return;
-      }
+  if (text === "") {
+    this.getLessons(); // empty search → load all
+    return;
+  }
 
-      fetch(`http://localhost:3000/search?query=${encodeURIComponent(text)}`)
-        .then(res => res.json())
-        .then(data => {
-          this.lessons = data;
-        })
-        .catch(err => console.error("Search Error:", err));
-    },
+  fetch(`${BASE_URL}/search?query=${encodeURIComponent(text)}`)
+    .then(res => res.json())
+    .then(data => {
+      this.lessons = data;
+    })
+    .catch(err => console.error("Search Error:", err));
+},
 
     toggleCart() {
       this.showCart = !this.showCart;
