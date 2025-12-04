@@ -9,7 +9,14 @@ header {
   align-items: center;
 }
 
-
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 button:disabled {
   background-color: grey;
