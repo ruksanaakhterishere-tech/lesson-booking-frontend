@@ -129,7 +129,7 @@ let app = new Vue({
       };
 
       // 1️⃣ Save order in MongoDB
-      fetch("http://localhost:3000/placeorder", {
+      fetch(`${BASE_URL}/placeorder`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(orderData)
