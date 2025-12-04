@@ -86,6 +86,7 @@
                 @input="order.phone = order.phone.replace(/[^0-9]/g, '')">
         </p>
 
+         <button v-on:click="checkout" :disabled="!isValidCheckout">Checkout</button>
       </div>
     </main>
 
