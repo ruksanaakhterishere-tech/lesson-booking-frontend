@@ -37,6 +37,14 @@
         <label><input type="radio" v-model="sortOrder" value="desc"> Descending</label>
       </div>
 
+      <div class="lesson-list">
+        <div class="lesson" v-for="lesson in filteredLessons" :key="lesson.id">
+          <p><strong>Subject:</strong> {{ lesson.subject }}</p>
+          <p><strong>Location:</strong> {{ lesson.location }}</p>
+          <p><strong>Price:</strong> £{{ lesson.price }}</p>
+          <p><strong>Spaces:</strong> {{ lesson.spaces }}</p>
+          <i :class="lesson.icon"></i><br><br>
+
           <button class="cart-btn" 
                   v-on:click="addToCart(lesson)" 
                   :disabled="lesson.spaces === 0">
