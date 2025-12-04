@@ -26,6 +26,17 @@
         class="search-box"
       >
 
+      <div class="sort-options">
+        <strong>Sort by:</strong><br>
+        <label><input type="radio" v-model="sortAttribute" value="subject"> Subject</label>
+        <label><input type="radio" v-model="sortAttribute" value="location"> Location</label>
+        <label><input type="radio" v-model="sortAttribute" value="price"> Price</label>
+        <label><input type="radio" v-model="sortAttribute" value="spaces"> Availability</label>
+        <br>
+        <label><input type="radio" v-model="sortOrder" value="asc"> Ascending</label>
+        <label><input type="radio" v-model="sortOrder" value="desc"> Descending</label>
+      </div>
+
           <button class="cart-btn" 
                   v-on:click="addToCart(lesson)" 
                   :disabled="lesson.spaces === 0">
