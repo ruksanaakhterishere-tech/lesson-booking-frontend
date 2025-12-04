@@ -138,7 +138,7 @@ let app = new Vue({
         .then(orderResponse => {
 
           // 2️⃣ Update spaces in MongoDB
-          return fetch("http://localhost:3000/update-spaces", {
+          return fetch(`${BASE_URL}/update-spaces`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ cart: this.cart })
