@@ -78,6 +78,16 @@ button:disabled {
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
+.cart-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+
 .lesson-list {
   display: flex;
   flex-wrap: wrap;
