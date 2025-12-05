@@ -2,7 +2,6 @@
 <html>
 <head>
   <title>Lesson Booking App</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -51,7 +50,6 @@
           <p><strong>Location:</strong> {{ lesson.location }}</p>
           <p><strong>Price:</strong> £{{ lesson.price }}</p>
           <p><strong>Spaces:</strong> {{ lesson.spaces }}</p>
-          <i :class="lesson.icon"></i><br><br>
 
           <button class="cart-btn" 
                   v-on:click="addToCart(lesson)" 
