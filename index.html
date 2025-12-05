@@ -13,7 +13,6 @@
   <header>
     <h1>Lesson Booking App</h1>
       <button v-on:click="toggleCart" :disabled="cart.length === 0">
-        <img :src="lesson.image" />
  {{ cart.length }} Cart
       </button>
   </header>
@@ -40,6 +39,13 @@
 
       <div class="lesson-list">
         <div class="lesson" v-for="lesson in filteredLessons" :key="lesson.id">
+
+          <img 
+            :src="BASE_URL + '/images/' + lesson.image" 
+            alt="Lesson Image" 
+            class="lesson-image"
+          >
+          
           <p><strong>Subject:</strong> {{ lesson.subject }}</p>
           <p><strong>Location:</strong> {{ lesson.location }}</p>
           <p><strong>Price:</strong> £{{ lesson.price }}</p>
