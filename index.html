@@ -41,11 +41,12 @@
         <div class="lesson" v-for="lesson in filteredLessons" :key="lesson.id">
 
           <img 
-            :src="BASE_URL + '/images/' + lesson.image" 
-            alt="Lesson Image" 
-            class="lesson-image"
-          >
-          
+          :src="getImageUrl(lesson.image)" 
+          alt="Lesson Image" 
+          class="lesson-image"
+          />
+
+
           <p><strong>Subject:</strong> {{ lesson.subject }}</p>
           <p><strong>Location:</strong> {{ lesson.location }}</p>
           <p><strong>Price:</strong> £{{ lesson.price }}</p>
