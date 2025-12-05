@@ -70,6 +70,12 @@
       <div v-else>
         <div class="cart-item" v-for="item in cart" :key="item.id">
 
+        <img 
+        :src="getImageUrl(item.image)" 
+        alt="Lesson Image" 
+        class="cart-image"
+        />
+
           <p><strong>Subject:</strong> {{ item.subject }}</p>
           <p><strong>Location:</strong> {{ item.location }}</p>
           <p><strong>Price:</strong> £{{ item.price }}</p>
