@@ -85,10 +85,13 @@ let app = new Vue({
     },
 
     addToCart(lesson) {
-      if (lesson.spaces > 0) {
-        this.cart.push(lesson);
-        lesson.spaces--;
-      }
+  if (lesson.spaces > 0) {
+    this.cart.push({
+      ...lesson,      // copy lesson details
+      image: lesson.image   // MAKE SURE the image is included
+    });
+    lesson.spaces--;
+  }
     },
 
     removeFromCart(lesson) {
