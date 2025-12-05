@@ -59,6 +59,10 @@ let app = new Vue({
         .catch(err => console.error("Fetch Lessons Error:", err));
     },
 
+     getImageUrl(imageName) {
+      return `${BASE_URL}/images/${imageName}`;
+    },
+
     // ------------------- BACKEND SEARCH -------------------
     searchLessons() {
   const text = this.searchText.trim();
