@@ -109,7 +109,7 @@ let app = new Vue({
       }
 
       // ❌ INVALID NAME (letters only)
-      if (!/^[A-Za-z]+$/.test(this.order.name)) {
+      if (!/^[A-Za-z ]+$/.test(this.order.name)) {
         alert("Name must contain letters only.");
         return;
       }
