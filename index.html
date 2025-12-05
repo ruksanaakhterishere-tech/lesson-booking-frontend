@@ -81,7 +81,7 @@
          <p>
           <strong>Name:</strong>
           <input v-model="order.name" placeholder="Enter name"
-           @input="order.name = order.name.replace(/[^A-Za-z]/g, '')">
+           @input="order.name = order.name.replace(/[^A-Za-z ]/g, '')">
         </p>
 
          <p>
